@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .btn {
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        #btn1 {
+            background-color: aqua;
+        }
+        div {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+<div id="btn1" class="btn">Click Me 1</div>
+<div id="btn2" class="btn">Click Me 2</div>
+<div id="output">nothing</div>
+<img src="http://lorempixel.com/400/200" alt="pic" id="myImage">
+
+</body>
+<script>
+    (document.getElementById("myImage").src = "http://lorempixel.com/100/100")
+
+    console.dir(document)
+    var myOutput = document.getElementById("btn1");
+    console.dir(myOutput)
+    myOutput.innerHTML = "NEW<br>BUTTON"
+
+    var myButtons = document.getElementsByClassName("btn")
+    console.dir(myButtons[1]);
+
+    var myTags = document.getElementsByTagName("div");
+    console.dir(myTags[1])
+
+    var mySel = document.querySelectorAll("div.btn")
+    console.dir(mySel[1]);
+
+    document.getElementById("output").innerHTML = document.title;
+</script>
+</html>
