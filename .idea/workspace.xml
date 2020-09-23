@@ -133,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600763231637</updated>
-      <workItem from="1600763234181" duration="13401000" />
+      <workItem from="1600763234181" duration="14973000" />
     </task>
     <servers />
   </component>
@@ -156,5 +156,9 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="253" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.823@0.23.1440.823" timestamp="1600763262235" />
+    <state x="32" y="170" width="670" height="676" key="search.everywhere.popup" timestamp="1600855658889">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="32" y="170" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1600855658889" />
   </component>
 </project>
