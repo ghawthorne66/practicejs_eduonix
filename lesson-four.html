@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>lesson three</title>
+    <title>Hello World</title>
     <style>
         .btn {
             padding: 10px;
@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-<h1>Lesson Three</h1>
+<h1>Lesson Four</h1>
 <div id="main">
     <div id="btn1" class="btn">Click Me 1</div>
     <div id="btn2" class="btn">Click Me 2</div>
@@ -32,34 +32,14 @@
 <script>
     console.dir(document);
     var output = document.getElementById("output");
-
-    var btnCN = document.getElementById("main").childNodes;
-    console.dir(btnCN);
-    for (i=0;i<btnCN.length;i++) {
-        if (btnCN[i].nodeName=="DIV") {
-            console.log(btnCN[i].nodeName);
-            btnCN[i].addEventListener('click', myFun)
-        }
-    }
-
-    // var btnEl = document.querySelectorAll(".btn");
-    // // console.log(btnEl.length);
-    // for(i=0; i<btnEl.length;i++) {
-    //     // console.log(btnEl[i].innerHTML);
-    //     btnEl[i].addEventListener('click', myFun)
-    // }
-
-
-    function myFun(e) {
-        console.log(e);
-        output.innerHTML = "CLICKED";
-        this.style.border = "3px solid blue";
-    }
-    function myFun2(e) {
-        console.log("myFun2");
-        output.innerHTML = "Mouse X " + e.x;
-        this.style.border = "3px solid red";
+    document.getElementById("btn1").addEventListener('click', myFun);
+    function myFun() {
+        var newEl = document.createElement("h1");
+        var newContent = document.createTextNode("New H1 Tag");
+        newEl.appendChild(newContent);
+        output.appendChild(newEl);
     }
 </script>
 </body>
 </html>
+

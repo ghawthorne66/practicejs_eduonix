@@ -47,6 +47,7 @@
       <change afterPath="$PROJECT_DIR$/../forkify/src/js/views/recipeView.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../forkify/src/js/views/searchView.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../forkify/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-four.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson-two.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php-learning/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php-learning/.idea/misc.xml" afterDir="false" />
@@ -127,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600763231637</updated>
-      <workItem from="1600763234181" duration="11335000" />
+      <workItem from="1600763234181" duration="11638000" />
     </task>
     <servers />
   </component>
