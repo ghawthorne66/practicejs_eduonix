@@ -1,49 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hello World</title>
     <style>
         .btn {
             padding: 10px;
             border: 1px solid black;
             display: inline-block;
         }
-        #btn1 {
-            background-color: aqua;
-        }
-        div {
-            background-color: bisque;
-        }
+
+        div {}
     </style>
 </head>
 <body>
-<div id="btn1" class="btn">Click Me 1</div>
-<div id="btn2" class="btn">Click Me 2</div>
+<div id="main">
+    <div id="btn1" class="btn">Click Me 1</div>
+    <div id="btn2" class="btn">Click Me 2</div>
+    <div id="btn3" class="btn">Click Me 3</div>
+    <div id="btn4" class="btn">Click Me 4</div>
+</div>
 <div id="output">nothing</div>
-<img src="http://lorempixel.com/400/200" alt="pic" id="myImage">
-
-</body>
+<img src="http://lorempixel.com/400/200" id="myImage" />
 <script>
-    (document.getElementById("myImage").src = "http://lorempixel.com/100/100")
+    console.dir(document);
+    var output = document.getElementById("output");
+    var btnEl = document.querySelectorAll(".btn");
+    console.log(btnEl.length);
+    for(i=0; i<btnEl.length;i++) {
+        console.log(btnEl[i].innerHTML);
+        btnEl[i].addEventListener('click', myFun)
+    }
 
-    console.dir(document)
-    var myOutput = document.getElementById("btn1");
-    console.dir(myOutput)
-    myOutput.innerHTML = "NEW<br>BUTTON"
 
-    var myButtons = document.getElementsByClassName("btn")
-    console.dir(myButtons[1]);
-
-    var myTags = document.getElementsByTagName("div");
-    console.dir(myTags[1])
-
-    var mySel = document.querySelectorAll("div.btn")
-    console.dir(mySel[1]);
-
-    document.getElementById("output").innerHTML = document.title;
+    function myFun(e) {
+        console.log(e);
+        output.innerHTML = "CLICKED";
+        this.style.border = "3px solid blue";
+    }
+    function myFun2(e) {
+        console.log("myFun2");
+        output.innerHTML = "Mouse X " + e.x;
+        this.style.border = "3px solid red";
+    }
 </script>
+</body>
 </html>

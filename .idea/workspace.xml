@@ -102,6 +102,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jspractice/index.html" useBuiltInWebServerPort="true">
@@ -121,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600763231637</updated>
-      <workItem from="1600763234181" duration="4144000" />
+      <workItem from="1600763234181" duration="9107000" />
     </task>
     <servers />
   </component>
